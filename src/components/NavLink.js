@@ -8,7 +8,7 @@ const NavLink = ({ href, children }) => {
   const isActive = pathname === href;
 
   return (
-    <Link href={href} className={`px-3 py-2 rounded ${isActive ? 'bg-pink-200' : 'hover:bg-pink-300'}`}>
+    <Link href={href} className={`px-3 py-2 text-white rounded ${isActive ? 'bg-pink-200' : 'hover:bg-pink-300'}`}>
       {children}
     </Link>
   );
