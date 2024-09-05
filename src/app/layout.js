@@ -5,9 +5,10 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CelDialer from "@/components/CelDialer";
+import Sidebar from "@/components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const isNome = "sim";
 
 
 export default function RootLayout({ children }) {
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-white`}>
           <Navbar /> 
 
-              <main>{children}</main>
+          
+          <CelDialer />
+          <main>{children}</main>
           
           <Footer />
           <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
