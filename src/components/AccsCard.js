@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AccsCard ({ nome, descricao, linkNitter, foto }) {
     return (
-<div className="max-w-sm bg-white  rounded-lg shadow-[inset_3px_3px_10px_0px_#00000010,7px_7px_8px_0px_#00000024] ">
+<div className="bg-white rounded-lg shadow-[inset_3px_3px_10px_0px_#00000010,7px_7px_8px_0px_#00000024] ">
     <a href="#" className="flex flex-col rounded-t-lg justify-center items-center p-5 ">
         <Image
               src={foto}

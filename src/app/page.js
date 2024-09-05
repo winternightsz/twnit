@@ -4,6 +4,8 @@ import HomeBotoesGrid from "@/components/HomeBotoesGrid";
 import BotoesBtn from "@/components/BotoesBtn";
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
+import CelDialer from "@/components/CelDialer";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -14,16 +16,18 @@ export default function Home() {
   const isNome = "sim";
   
   return (
-    <main className="flex flex-col bg-white sm:flex-row">
+    <main className="flex flex-col bg-black max-h-full sm:flex-row">
       
-      <aside id="default-sidebar" className="hidden sm:block sm:static sm:z-40 sm:w-64 sm:h-screen" aria-label="Sidebar">
+      <aside id="default-sidebar" className="hidden sm:block sm:sticky sm:z-40 sm:w-64 sm:h-screen" aria-label="Sidebar">
         <Sidebar HomeBotoesGrid isNomes={isNome} />
       </aside>
-      <div className="sm:p-9 flex flex-col items-center">
+      
       {/* <div className="md:p-4 md:pt-8"><HomeBotoesGrid /></div>
       <div className="md:p-4 md:pt-0"><HomeBotoesGrid isNomes={isNome} /></div>  */}
+      <div className="min-w-screen md:p-4 bg-blue-900">
       <AccsGrid />
       </div>
+      
     </main>
   );
 }
